@@ -104,7 +104,7 @@ This report provides an evaluation of the Convolutional Neural Network (CNN) mod
 
 
 - **7. Conclusion**
-  The model achieved **90.08% training accuracy** and **81.82% best validation accuracy** for cancer detection.ones relevant to your project. -->
+  The model achieved **90.08% training accuracy** and **81.82% best validation accuracy** for cancer detection.
 
 
 ## Technologies Used
