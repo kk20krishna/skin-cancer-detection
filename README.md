@@ -16,7 +16,7 @@ The dataset has been uploaded to Kagglge - https://www.kaggle.com/datasets/kk20k
 The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
 
-The data set contains the following diseases:
+The data set contains the following 9 diseases:
 
 - Actinic keratosis
 - Basal cell carcinoma
@@ -34,6 +34,7 @@ The data set contains the following diseases:
 **Model Architecture**
 
 Convolutional Neural Network (CNN) designed to classify images into 9 distinct cancer classes. The input images have a resolution of 180x180 pixels with 3 color channels (RGB).
+The model classifies images into 9 classes.
 
 The design choices made for this model are explained in the notebook.
 
