@@ -90,11 +90,11 @@ This report provides an evaluation of the Convolutional Neural Network (CNN) mod
 
 ![image](https://github.com/user-attachments/assets/f00f1c19-1044-4d6c-ba19-5ff1e5252057)
 
--  **Key Takeaways**
-    -  'Nevus' and 'Melanoma' have the highest confusion. This makes sense since melanoma can visually resemble a nevus.
-    -  'Actinic Keratosis' is often confused with 'Squamous Cell Carcinoma' and 'Nevus.'
-    -  'Vascular Lesion' and 'Seborrheic Keratosis' show strong classification performance.
-    -  'Melanoma' misclassification is concerning since early detection is critical for treatment.
+  -  **Key Takeaways**
+      -  'Nevus' and 'Melanoma' have the highest confusion. This makes sense since melanoma can visually resemble a nevus.
+      -  'Actinic Keratosis' is often confused with 'Squamous Cell Carcinoma' and 'Nevus.'
+      -  'Vascular Lesion' and 'Seborrheic Keratosis' show strong classification performance.
+      -  'Melanoma' misclassification is concerning since early detection is critical for treatment.
 
 - **6. Observations**
   - **Slight Overfitting**: The training accuracy is higher than validation accuracy, indicating overfitting. Consider applying stronger regularization techniques such as dropout, weight decay, or data augmentation.
