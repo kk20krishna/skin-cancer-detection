@@ -45,7 +45,6 @@ The design choices made for this model are explained in the notebook.
 
 
 ## Conclusions
-**Model Evaluation Report**
 
 **1. Overview**
 This report provides an evaluation of the Convolutional Neural Network (CNN) model trained for melanoma detection and cancer classification. The evaluation metrics include accuracy, precision, recall, F1-score, and loss for both training and validation datasets.
