@@ -35,56 +35,77 @@ The data set contains the following diseases:
 
 **Model Architecture**
 
-This Convolutional Neural Network (CNN) is designed to classify images into 9 distinct cancer classes. The input images have a resolution of 180x180 pixels with 3 color channels (RGB).
+Convolutional Neural Network (CNN) designed to classify images into 9 distinct cancer classes. The input images have a resolution of 180x180 pixels with 3 color channels (RGB).
 
-Below, the design choices made for this model are explained:
+The design choices made for this model are explained in the notebook.
 
-1. **Input Preprocessing**
-  - **Rescaling:** The input pixel values are normalized to the range [0,1] using `Rescaling(scale=1./255)`. This helps in stabilizing the learning process by ensuring smaller gradients during training.
+![image](https://github.com/user-attachments/assets/a2293089-6337-46c5-a89c-e6d951512291)
 
-2. **Feature Extraction using Convolutional Blocks**
-The model consists of four convolutional blocks, each having:
-      1. **Conv2D Layer**: Extracts spatial features using 3x3 filters with 'same' padding to maintain spatial dimensions.
-      2. **ReLU Activation**: Introduces non-linearity, allowing the model to learn complex patterns.
-      3. **MaxPooling Layer**: Reduces spatial dimensions and computational cost while preserving important features.
-
-  - **First Convolutional Block:**
-    - 32 filters, 3x3 kernel, ReLU activation, 'same' padding.
-    - Followed by MaxPooling to reduce spatial size.
-
-  - **Second Convolutional Block:**
-    - 64 filters, 3x3 kernel, ReLU activation, 'same' padding.
-    - Followed by MaxPooling.
-
-  - **Third Convolutional Block:**
-    - 128 filters, 3x3 kernel, ReLU activation, 'same' padding.
-    - Followed by MaxPooling.
-
-  - **Fourth Convolutional Block:**
-    - 256 filters, 3x3 kernel, ReLU activation, 'same' padding.
-    - Followed by MaxPooling.
-
-3. **Regularization using Dropout**
-  - A **Dropout layer (50%)** is introduced after the fourth convolutional block to reduce overfitting by randomly setting neuron outputs to zero during training.
-
-4. **Fully Connected Layers**
-  - **Flatten Layer**: Converts the feature maps into a 1D vector.
-  - **Dense Layer with 128 neurons (ReLU activation)**: Helps in learning complex feature representations.
-  - **Dropout Layer (50%)**: Provides additional regularization.
-
-5. **Output Layer**
-  - **Dense Layer with 9 neurons**: Uses Softmax activation to output probabilities for the 9 cancer classes.
 
 ![image](https://github.com/user-attachments/assets/589c00da-e0fe-4c07-bf48-cb7a5abbbba3)
 
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+**Model Evaluation Report**
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+**1. Overview**
+This report provides an evaluation of the Convolutional Neural Network (CNN) model trained for melanoma detection and cancer classification. The evaluation metrics include accuracy, precision, recall, F1-score, and loss for both training and validation datasets.
+
+**2. Performance Metrics**
+
+- **Training Performance**
+  - Final Training Accuracy: 90.08%
+  - Final Training F1-score: 89.83%
+  - Final Training Precision: 91.81%
+  - Final Training Recall: 88.71%
+  - Final Training Loss: 0.2508
+
+- **Validation Performance**
+  - Best Validation Accuracy: 81.82%
+  - Final Validation Accuracy: 81.47%
+  - Final Validation F1-score: 80.88%
+  - Final Validation Precision: 83.06%
+  - Final Validation Recall: 80.22%
+  - Final Validation Loss: 0.7534
+
+**3. Training vs Validation Trends**
+
+- **Accuracy**
+  - Training accuracy remained consistently above 89%.
+  - Validation accuracy fluctuated between 81% and 82%, peaking at 81.82%.
+  - The gap between training and validation accuracy suggests minor overfitting.
+
+- **F1-score**
+  - Training F1-score improved steadily, reaching 89.83%.
+  - Validation F1-score stabilized around 80.88%, indicating the model maintains good balance in classification.
+
+- **Loss Analysis**
+  - Training loss steadily decreased to **0.2508**, showing good convergence.
+  - Validation loss plateaued around **0.75**, indicating room for further generalization improvements.
+
+
+- **4. Learning Rate Analysis**
+  - The final learning rate decay suggests the model was approaching optimal convergence.
+
+
+-  **5. Confusion Matrix**
+
+![image](https://github.com/user-attachments/assets/f00f1c19-1044-4d6c-ba19-5ff1e5252057)
+
+-  Key Takeaways
+  -  'Nevus' and 'Melanoma' have the highest confusion. This makes sense since melanoma can visually resemble a nevus.
+  -  'Actinic Keratosis' is often confused with 'Squamous Cell Carcinoma' and 'Nevus.'
+  -  'Vascular Lesion' and 'Seborrheic Keratosis' show strong classification performance.
+  -  'Melanoma' misclassification is concerning since early detection is critical for treatment.
+
+- **5. Observations**
+  - **Slight Overfitting**: The training accuracy is higher than validation accuracy, indicating overfitting. Consider applying stronger regularization techniques such as dropout, weight decay, or data augmentation.
+  - **Validation Performance Plateau**: Validation accuracy remained stable around **81%**, indicating that performance improvements may require architectural modifications or additional data.
+  - **Early Stopping Activation**: Training stopped at **epoch 74**, suggesting further training would not yield significant improvements.
+
+
+- **6. Conclusion**
+  The model achieved **90.08% training accuracy** and **81.82% best validation accuracy** for cancer detection.ones relevant to your project. -->
 
 
 ## Technologies Used
