@@ -9,8 +9,6 @@ To build a CNN based model which can accurately detect melanoma. Melanoma is a t
 * [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
-
 ## General Information
 # Dataset
 The dataset has been uploaded to Kagglge - https://www.kaggle.com/datasets/kk20krishna/skin-cancer-data-isic
@@ -92,38 +90,45 @@ This report provides an evaluation of the Convolutional Neural Network (CNN) mod
 
 ![image](https://github.com/user-attachments/assets/f00f1c19-1044-4d6c-ba19-5ff1e5252057)
 
--  Key Takeaways
-  -  'Nevus' and 'Melanoma' have the highest confusion. This makes sense since melanoma can visually resemble a nevus.
-  -  'Actinic Keratosis' is often confused with 'Squamous Cell Carcinoma' and 'Nevus.'
-  -  'Vascular Lesion' and 'Seborrheic Keratosis' show strong classification performance.
-  -  'Melanoma' misclassification is concerning since early detection is critical for treatment.
+-  **Key Takeaways**
+    -  'Nevus' and 'Melanoma' have the highest confusion. This makes sense since melanoma can visually resemble a nevus.
+    -  'Actinic Keratosis' is often confused with 'Squamous Cell Carcinoma' and 'Nevus.'
+    -  'Vascular Lesion' and 'Seborrheic Keratosis' show strong classification performance.
+    -  'Melanoma' misclassification is concerning since early detection is critical for treatment.
 
-- **5. Observations**
+- **6. Observations**
   - **Slight Overfitting**: The training accuracy is higher than validation accuracy, indicating overfitting. Consider applying stronger regularization techniques such as dropout, weight decay, or data augmentation.
   - **Validation Performance Plateau**: Validation accuracy remained stable around **81%**, indicating that performance improvements may require architectural modifications or additional data.
   - **Early Stopping Activation**: Training stopped at **epoch 74**, suggesting further training would not yield significant improvements.
 
 
-- **6. Conclusion**
+- **7. Conclusion**
   The model achieved **90.08% training accuracy** and **81.82% best validation accuracy** for cancer detection.ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- **Augmentor**
+- **shutil**
+- **pathlib**
+- **tensorflow**
+- **matplotlib**
+- **numpy**
+- **pandas**
+- **os**
+- **PIL**
+- **keras**
+- **kagglehub**
+- **cv2 (OpenCV)**
+- **scikit-learn**
+- **seaborn**
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+Additionally, various TensorFlow and Keras modules were utilized for building and training the model, including layers, models, callbacks, and regularizers.
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- Cource content in upGrad course
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@kk20krishna](https://github.com/kk20krishna)
 
 
 <!-- Optional -->
