@@ -29,7 +29,7 @@ The data set contains the following 9 diseases:
 
 ### Augmentation
 Data augmentation performed using Augmentor library to:
-1. hndle class imbalance
+1. Handle class imbalance
 2. Increase training data, ehnance variety and reduce overfitting data
 
 ## CNN Design
