@@ -41,6 +41,43 @@ Convolutional Neural Network (CNN) designed to classify images into 9 distinct c
 The model classifies images into 9 classes.
 
 The design choices made for this model are explained in the notebook.
+Below, the design choices made for this model are explained:
+
+1. **Input Preprocessing**
+  - **Rescaling:** The input pixel values are normalized to the range [0,1] using `Rescaling(scale=1./255)`. This helps in stabilizing the learning process by ensuring smaller gradients during training.
+
+2. **Feature Extraction using Convolutional Blocks**
+The model consists of four convolutional blocks, each having:
+      1. **Conv2D Layer**: Extracts spatial features using 3x3 filters with 'same' padding to maintain spatial dimensions.
+      2. **ReLU Activation**: Introduces non-linearity, allowing the model to learn complex patterns.
+      3. **MaxPooling Layer**: Reduces spatial dimensions and computational cost while preserving important features.
+
+    - **First Convolutional Block:**
+      - 32 filters, 3x3 kernel, ReLU activation, 'same' padding.
+      - Followed by MaxPooling to reduce spatial size.
+  
+    - **Second Convolutional Block:**
+      - 64 filters, 3x3 kernel, ReLU activation, 'same' padding.
+      - Followed by MaxPooling.
+  
+    - **Third Convolutional Block:**
+      - 128 filters, 3x3 kernel, ReLU activation, 'same' padding.
+      - Followed by MaxPooling.
+  
+    - **Fourth Convolutional Block:**
+      - 256 filters, 3x3 kernel, ReLU activation, 'same' padding.
+      - Followed by MaxPooling.
+
+3. **Regularization using Dropout**
+    - A **Dropout layer (50%)** is introduced after the fourth convolutional block to reduce overfitting by randomly setting neuron outputs to zero during training.
+
+4. **Fully Connected Layers**
+    - **Flatten Layer**: Converts the feature maps into a 1D vector.
+    - **Dense Layer with 128 neurons (ReLU activation)**: Helps in learning complex feature representations.
+    - **Dropout Layer (50%)**: Provides additional regularization.
+
+5. **Output Layer**
+  - **Dense Layer with 9 neurons**: Uses Softmax activation to output probabilities for the 9 cancer classes.
 
 ![image](https://github.com/user-attachments/assets/a2293089-6337-46c5-a89c-e6d951512291)
 > Image created using https://alexlenail.me/NN-SVG/AlexNet.html
