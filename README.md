@@ -39,9 +39,12 @@ The model classifies images into 9 classes.
 The design choices made for this model are explained in the notebook.
 
 ![image](https://github.com/user-attachments/assets/a2293089-6337-46c5-a89c-e6d951512291)
+> Image created using https://alexlenail.me/NN-SVG/AlexNet.html
+
 
 
 ![image](https://github.com/user-attachments/assets/589c00da-e0fe-4c07-bf48-cb7a5abbbba3)
+
 
 
 ## Conclusions
