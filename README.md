@@ -133,6 +133,7 @@ Additionally, various TensorFlow and Keras modules were utilized for building an
 
 ## Acknowledgements
 - Cource content in upGrad course
+- CNN design image created using https://alexlenail.me/NN-SVG/AlexNet.html
 
 ## Contact
 Created by [@kk20krishna](https://github.com/kk20krishna)
