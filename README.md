@@ -107,20 +107,20 @@ This report provides an evaluation of the Convolutional Neural Network (CNN) mod
 
 
 ## Technologies Used
-- **Augmentor**
-- **shutil**
-- **pathlib**
-- **tensorflow**
-- **matplotlib**
-- **numpy**
-- **pandas**
-- **os**
-- **PIL**
-- **keras**
-- **kagglehub**
-- **cv2 (OpenCV)**
-- **scikit-learn**
-- **seaborn**
+- Augmentor
+- shutil
+- pathlib
+- tensorflow
+- matplotli
+- numpy
+- pandas
+- os
+- PIL
+- keras
+- kagglehub
+- cv2 (OpenCV)
+- scikit-learn
+- seaborn
 
 Additionally, various TensorFlow and Keras modules were utilized for building and training the model, including layers, models, callbacks, and regularizers.
 
