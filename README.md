@@ -9,8 +9,7 @@ To build a CNN based model which can accurately detect melanoma. Melanoma is a t
 * [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
 
-## General Information
-# Dataset
+## Dataset
 The dataset has been uploaded to Kagglge - https://www.kaggle.com/datasets/kk20krishna/skin-cancer-data-isic
 
 The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
@@ -27,6 +26,11 @@ The data set contains the following 9 diseases:
 - Seborrheic keratosis
 - Squamous cell carcinoma
 - Vascular lesion
+
+## Augmentation
+Data augmentation performed using Augmentor library to:
+1. hndle class imbalance
+2. Increase training data, ehnance variety and reduce overfitting data
 
 ## CNN Design
 **Cancer Classification Model Design**
